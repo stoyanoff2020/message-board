@@ -1,0 +1,57 @@
+# Code Owners for Message Board Application
+# 
+# This file defines who should be automatically requested for review
+# when changes are made to specific parts of the codebase.
+#
+# Order is important; the last matching pattern takes precedence.
+
+# Global fallback - all files
+* @your-github-username
+
+# Documentation
+*.md @your-github-username
+/docs/ @your-github-username
+
+# Configuration files
+*.json @your-github-username
+*.js @your-github-username
+*.ts @your-github-username
+*.yml @your-github-username
+*.yaml @your-github-username
+
+# Frontend Components
+/src/components/ @your-github-username
+/src/app/ @your-github-username
+/src/hooks/ @your-github-username
+/src/contexts/ @your-github-username
+
+# Backend/API
+/src/app/api/ @your-github-username
+/src/lib/ @your-github-username
+
+# Database
+/supabase/ @your-github-username
+
+# Testing
+/src/**/*.test.* @your-github-username
+/src/**/*.spec.* @your-github-username
+/e2e/ @your-github-username
+/playwright.config.ts @your-github-username
+/vitest.config.ts @your-github-username
+
+# Docker and DevOps
+/Dockerfile* @your-github-username
+/docker-compose*.yml @your-github-username
+/nginx.conf @your-github-username
+/scripts/ @your-github-username
+
+# CI/CD
+/.github/ @your-github-username
+
+# Security and Quality
+/sonar-project.properties @your-github-username
+/.eslintrc.json @your-github-username
+
+# Dependencies
+/package.json @your-github-username
+/package-lock.json @your-github-username
